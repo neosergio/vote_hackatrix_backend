@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from ideas import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'api/ideas/$',  views.idea_list, name='idea_list'),
+    url(r'api/results/$', views.results, name='results'),
+    url(r'api/vote/$', views.vote, name='vote'),
 ]
