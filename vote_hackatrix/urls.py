@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'api/ideas/$',  views.idea_list, name='idea_list'),
     url(r'api/results/$', views.results, name='results'),
-    url(r'api/vote/$', views.vote, name='vote'),
+    url(r'api/idea/(?P<pk>\d+)/$', views.idea, name='idea'),
+    url(r'api/idea/(?P<pk>\d+)/vote/$', views.vote, name='vote'),
 ]
