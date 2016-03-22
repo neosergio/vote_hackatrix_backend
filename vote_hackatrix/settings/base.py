@@ -22,11 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '!z6-*o(**n0s@^r5n(#igtcm8j)cd@60m)q!%#982-9@5ik!ye'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 
+# Database empty default
+DATABASES = {
+    'default':{}
+}
 
 # Application definition
 
@@ -71,17 +72,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'vote_hackatrix.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 
 # Password validation
