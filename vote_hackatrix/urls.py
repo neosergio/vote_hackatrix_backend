@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 from ideas import views
 
@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'api/results/$', views.results, name='results'),
     url(r'api/idea/(?P<pk>\d+)/$', views.idea, name='idea'),
     url(r'api/idea/(?P<pk>\d+)/vote/$', views.vote, name='vote'),
+    url(r'api/docs/', include('rest_framework_swagger.urls')),
 ]

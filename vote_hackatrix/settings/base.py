@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ideas',
     'rest_framework',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE_CLASSES = [
