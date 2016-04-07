@@ -45,9 +45,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE_CLASSES = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -57,6 +57,19 @@ MIDDLEWARE_CLASSES = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_METHODS = ('GET',
+                      'POST',
+                      'PUT',
+                      'PATCH',
+                      'DELETE',
+                      'OPTIONS')
+CORS_ALLOW_HEADERS = ('x-requested-with',
+                      'content-type',
+                      'accept',
+                      'origin',
+                      'authorization')
+CORS_EXPOSE_HEADERS = ('Access-Control-Allow-Origin',
+                       'Access-Control-Allow-Headers')
 
 ROOT_URLCONF = 'vote_hackatrix.urls'
 
