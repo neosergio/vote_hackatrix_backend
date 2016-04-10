@@ -16,11 +16,15 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from ideas import views
-from ideas.views import CustomObtainAuthToken
+from ideas.views import CustomObtainAuthToken, GetId
+from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'api/authenticate/', CustomObtainAuthToken.as_view()),
+    url(r'^api/token-auth/$', obtain_jwt_token),
+    url(r'^api/token-auth/get_id/$', GetId.as_view()),
+    url(r'^api/token-auth/refresh/$', refresh_jwt_token),
     url(r'api/ideas/$',  views.idea_list, name='idea_list'),
     url(r'api/results/$', views.results, name='results'),
     url(r'api/idea/(?P<pk>\d+)/$', views.idea, name='idea'),

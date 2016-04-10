@@ -7,6 +7,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
 @api_view(['GET',])
@@ -47,3 +49,13 @@ class CustomObtainAuthToken(ObtainAuthToken):
         response = super(CustomObtainAuthToken, self).post(request, *args, **kwargs)
         token = Token.objects.get(key=response.data['token'])
         return Response({'token': token.key, 'id': token.user_id})
+
+
+class GetId(APIView):
+
+    def get(self, request):
+        data = {
+            'user_id': request.user.id,
+            'username': request.user.username,
+            'token': str(request.auth)}
+        return Response(data)
