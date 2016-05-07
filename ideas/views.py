@@ -7,7 +7,7 @@ from rest_framework.response import Response
 @api_view(['GET',])
 def idea_list(request):
     if request.method == 'GET':
-        ideas = Idea.objects.all()
+        ideas = Idea.objects.all().filter(is_active=True)
         serializer = IdeaListSerializer(ideas, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -21,7 +21,7 @@ def idea(request, pk):
 @api_view(['GET',])
 def results(request):
     if request.method == 'GET':
-        ideas_ordered = Idea.objects.order_by('-votes')
+        ideas_ordered = Idea.objects.order_by('-votes').filter(is_active=True)
         serializer = IdeaListSerializer(ideas_ordered, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
