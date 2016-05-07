@@ -1,5 +1,12 @@
 from .models import Idea, Outstanding
 from django.contrib import admin
+from django.contrib.admin import AdminSite
+
+
+class MyAdminSite(AdminSite):
+    site_header = "Hackatrix Backend"
+    site_title = "Hackatrix Backend"
+    index_title = "Administrator"
 
 
 class IdeaAdmin(admin.ModelAdmin):
@@ -20,5 +27,6 @@ class OutstandingAdmin(admin.ModelAdmin):
         obj.save()
 
 
-admin.site.register(Idea, IdeaAdmin)
-admin.site.register(Outstanding, OutstandingAdmin)
+admin_site = MyAdminSite(name='myadmin')
+admin_site.register(Idea, IdeaAdmin)
+admin_site.register(Outstanding, OutstandingAdmin)
