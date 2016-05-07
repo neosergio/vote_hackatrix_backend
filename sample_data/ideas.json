@@ -1,0 +1,97 @@
+[{
+	"model": "ideas.idea",
+	"pk": 5,
+	"fields": {
+		"name": "Donante",
+		"description": "En el Per\u00fa existen dos problem\u00e1ticas: no se alcanza el stock de reserva de sangre voluntaria para una donaci\u00f3n y no se consigue las donaciones voluntarias de sangre en el momento adecuado ante una emergencia. \r\n\r\nComo soluci\u00f3n planeo construir un aplicativo m\u00f3vil debido al emergente crecimiento de usuarios de estos dispositivos inteligentes.\r\n\r\nEl objetivo de la aplicaci\u00f3n es buscar y encontrar donantes de sangre voluntarios.\r\n\r\nEl paciente que requiera una donaci\u00f3n o alg\u00fan familiar suyo puede ingresar el pedido y se le encontrar\u00e1 un donante compatible entre los usuarios de la aplicaci\u00f3n.",
+		"votes": 268
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 6,
+	"fields": {
+		"name": "Total Schools",
+		"description": "Total Schools es una plataforma nube que revolucionar\u00e1 la forma de estudiar de nuestros hijos. Poniendo en la palma de la mano de los padres y con solo un click desde cualquier dispositivo y lugar, toda la informaci\u00f3n educativa diaria de sus hijos. Permite que los padres, hijos y colegios est\u00e9n interconectados en tiempo real, Olv\u00eddense de la agenda escolar, diario y libreta de notas convencional. Con Total Schools los padres podr\u00e1n acceder a toda la informaci\u00f3n acad\u00e9mica de sus hijos como: horario escolar, clases, mensajes, tareas, cursos, ex\u00e1menes, pr\u00e1cticas, calificaciones, estad\u00edsticas, reportes, actividades culturales y extracurriculares, informaci\u00f3n de pagos, eventos, premios y m\u00e1s. Con Total Schools vas al cole con tus hijos",
+		"votes": 116
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 7,
+	"fields": {
+		"name": "CocheraLibre",
+		"description": "Web que permite registrar las cocheras disponibles.",
+		"votes": 62
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 8,
+	"fields": {
+		"name": "AdoptaPe",
+		"description": "Una pagina web encargada de mostrar animales callejeros/mascotas sin due\u00f1os/animales recogidos, para adopci\u00f3n.\r\n\r\nLa persona que quiera adoptar deber\u00e1 pasar un test en l\u00ednea, test que comprobar\u00e1 si la persona que desea adoptar puede o no hacerlo en base a su capacidad econ\u00f3mica y tiempo disponible.",
+		"votes": 74
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 9,
+	"fields": {
+		"name": "Incidencias de municipalidades",
+		"description": "Una aplicaci\u00f3n m\u00f3vil que funcione como sistema de registro de incidencias a las municipalidades, en las cuales se puedan subir im\u00e1genes o videos denunciando alguna irregularidad que cualquier persona pueda encontrar en la calle. La aplicaci\u00f3n identificar\u00eda en que distrito se encuentra la persona con su dispositivo m\u00f3vil y la incidencia se registrar\u00eda en la municipalidad adecuada.",
+		"votes": 93
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 10,
+	"fields": {
+		"name": "MentorING",
+		"description": "Es una aplicaci\u00f3n web que permitir\u00e1 juntar a j\u00f3venes, de entre 14 y 17 a\u00f1os, interesados en estudiar alguna carrera de ingenier\u00eda (Mentees) con egresados de Ingenier\u00eda del Per\u00fa (Mentores) en base a intereses comunes, en donde el Mentor ofrece consejos, informaci\u00f3n o gu\u00edas en beneficio del desarrollo personal del Mentee.",
+		"votes": 84
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 11,
+	"fields": {
+		"name": "App de Red de voluntariado",
+		"description": "Aplicaci\u00f3n m\u00f3vil para llevar la gamification hacia las actividades de voluntariado una especie de swarm pero para obras de caridad y voluntariado, donde uno mismo vaya registrando en qu\u00e9 actividades particip\u00f3 y con qu\u00e9 amigos particip\u00f3 (puede tener integraci\u00f3n con facebook), por cada actividad que va haciendo (hospitales, orfanatos, asilos, animales, limpieza) va ganando puntos y tambi\u00e9n medallas.",
+		"votes": 70
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 12,
+	"fields": {
+		"name": "Appunta.la",
+		"description": "El prop\u00f3sito es concientizar a los conductores al momento de estacionar inadecuadamente sus veh\u00edculos. Mediante esta plataforma los usuarios (peatones) podr\u00e1n tener una forma de centralizar denuncias vehiculares que se ven com\u00fanmente en redes sociales o en alguna secci\u00f3n de alg\u00fan medio de comunicaci\u00f3n, la cual no se enfoca principalmente en el seguimiento de estas infracciones.",
+		"votes": 64
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 13,
+	"fields": {
+		"name": "Sensei, el aula virtual",
+		"description": "Imagina que ya no tengas que ir a la universidad para escuchar las clases. Ahora puedes hacerlo en tiempo real desde tu computadora y sin tener que viajar y perder tiempo y esfuerzo desplazandote.\r\n\r\nSensei es una plataforma P2P que virtualiza una sesion de clases ordinaria en una webapp que permite hablar, escuchar, chatear,dibujar en una pizarra, compartir archivos y compartir la pantalla entre un alumno y un profesor en un salon determinado.",
+		"votes": 69
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 14,
+	"fields": {
+		"name": "ComiQR",
+		"description": "La problem\u00e1tica especial para los negocios es el tiempo y como el cliente visualiza ese tiempo de retardo que tienen algunos establecimientos en atender a sus clientes, pues en vez de ir directamente a la caja para hacer un pedido (hablando de comidas r\u00e1pidas), hacer sus pedidos v\u00eda smartphone y que genere un c\u00f3digo QR, el cual al llegar a la ventanilla del establecimiento donde el usuario quiera consumir, recoge con el su pedido previamente mostrandole en un anuncio a su celular si es que su pedido ya esta listo, y si no puede pagar con tarjeta de cr\u00e9dito o d\u00e9bito, con el c\u00f3digo QR se aproxima a la tienda y lo paga con el.",
+		"votes": 33
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 15,
+	"fields": {
+		"name": "Guide Tech Dog",
+		"description": "Una aplicaci\u00f3n o web dirigida a los invidentes. El prop\u00f3sito seria que se conecte con p\u00e1ginas web u otras aplicaciones y de una lectura de los textos aparecidos en cada uno, as\u00ed mismo lea las opciones de datos a completar.\r\n\r\nEsta aplicaci\u00f3n o web deber\u00eda tambi\u00e9n reconocer la voz y permita dar respuesta a las opciones le\u00eddas.",
+		"votes": 32
+	}
+}, {
+	"model": "ideas.idea",
+	"pk": 16,
+	"fields": {
+		"name": "Idea 2",
+		"description": "desc",
+		"votes": 2
+	}
+}]
