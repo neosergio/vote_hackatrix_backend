@@ -1,6 +1,7 @@
 from .models import Idea, Outstanding
 from django.contrib import admin
 from django.contrib.admin import AdminSite
+from django.contrib.auth.models import User, Group
 
 
 class MyAdminSite(AdminSite):
@@ -28,5 +29,7 @@ class OutstandingAdmin(admin.ModelAdmin):
 
 
 admin_site = MyAdminSite(name='myadmin')
+admin_site.register(User)
+admin_site.register(Group)
 admin_site.register(Idea, IdeaAdmin)
 admin_site.register(Outstanding, OutstandingAdmin)
